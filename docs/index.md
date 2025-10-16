@@ -3,23 +3,24 @@
 layout: home
 
 hero:
-  name: "neko_lkc1009_docs"
+  name: "NEKO_lkc1009_DOCS"
   text: "A some docs"
-  tagline: My great project tagline
+  tagline: neko.share write...
+  image:
+    src: /logo.jpg
+    alt: by balabling
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Docs
+      link: /docs/share
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Future
+      link: /
 
 features:
-  - title: Feature A
+  - title: Neko Share
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Neko Read
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

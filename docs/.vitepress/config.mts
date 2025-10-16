@@ -1,28 +1,34 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "neko_lkc1009_docs",
+  title: "NEKO_lkc1009_DOCS",
   description: "A some docs",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.jpg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Docs', link: '/docs/share' },
+      { text: 'Future', link: '/' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    outline: {
+      level: 'deep',
+      label: 'Docs'
+    },
+
+    sidebar: {
+      '/docs/': [
+        {
+          items: [
+            { text: 'Neko Share Project', link: '/docs/share' },
+            { text: 'Neko Read Project', link: '/docs/read' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/lkc1009Neko' }
     ]
   }
 })
